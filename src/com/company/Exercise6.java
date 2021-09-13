@@ -28,22 +28,20 @@ public class Exercise6 {
         } else {
             c = scan_c.nextInt();
         }
-
             double quadratic = Math.pow(b, 2)- 4*a*c;
-
         if (Math.sqrt(quadratic)>0){
             x = ((-b+Math.sqrt(quadratic))/(2*a));
-            System.out.println(x);
+            System.out.println("there are two solutions, first is: " + x);
             x = ((-b-Math.sqrt(quadratic))/(2*a));
-            System.out.println(x);
+            System.out.println("there are two solutions, second is: " + x);
         }
             else if(Math.sqrt(quadratic) == 0) {
                 x = (float) -b / 2 * a;
-                System.out.println(x);
+
+                System.out.println("there is one solution: " + x);
     }
             else{
-                    System.out.println("tallene overholder ikke reglen om vi må tage roden af et negativ tal");
-
+                    System.out.println("no solutions ");
                 }
 
 
