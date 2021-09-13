@@ -29,26 +29,20 @@ public class Exercise6 {
             c = scan_c.nextInt();
         }
             double quadratic = Math.pow(b, 2)- 4*a*c;
-        if (Math.sqrt(quadratic)>0){
+        if (Math.sqrt(quadratic)>0){                                /*1-2-1there are two solutions, first is: 2.414213562373095. there are two solutions, second is: -0.41421356237309515 */
             x = ((-b+Math.sqrt(quadratic))/(2*a));
             System.out.println("there are two solutions, first is: " + x);
             x = ((-b-Math.sqrt(quadratic))/(2*a));
             System.out.println("there are two solutions, second is: " + x);
-        }
+             }
             else if(Math.sqrt(quadratic) == 0) {
                 x = (float) -b / 2 * a;
 
                 System.out.println("there is one solution: " + x);
-    }
+            }
             else{
                     System.out.println("no solutions ");
-                }
-
-
-
+            }
     }
-
-
-
 }
 
